@@ -10,6 +10,13 @@
    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <title>Sitios Turisticos de Colombia</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+          integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+          crossorigin=""/>		
+   <link rel="stylesheet" type="text/css" href="mapa.css"/>	
+
+  
 </head>
 
 <body>
@@ -41,7 +48,163 @@
     </ul>
 </nav>
 </div>
+
     </header>
+    <main>
+     
+           
+           <div id="map"></div>
+
+        
+        </div>
+        <section class="booking">
+            <div class="container">
+                <form action=""class="form">
+                    <div class="input-group">
+                        <label for="destination" class="input-label">Destino</label>
+                        <input type="text" class="input" id="destination">
+                     
+                    </div>
+                    <div class="input-group">
+                        <label for="check-in" class="input-label">Fecha de llegada</label>
+                        <input type="date" class="input" id="check-in">
+                     
+                    </div>
+                    <div class="input-group">
+                        <label for="check-out" class="input-label">Fecha de ida</label>
+                        <input type="date" class="input" id="check-out">
+                     
+                    </div>
+                    <div class="input-group">
+                        <label for="adults" class="input-label">Adultos</label>
+                        <select class="options" id="adults">
+<option value="0">0</option>
+<option value="0">1</option>
+<option value="0">2</option>
+<option value="0">3</option>
+<option value="0">4</option>
+                        </select>
+                     
+                    </div>
+                    <div class="input-group">
+                        <label for="children" class="input-label">Niños</label>
+                        <select class="options" id="children">
+<option value="0">0</option>
+<option value="0">1</option>
+<option value="0">2</option>
+<option value="0">3</option>
+<option value="0">4</option>
+                        </select>
+                     
+                    </div>
+                    <button class="boton_1">
+                        Buscar
+                    </button>
+
+                </form>
+            </div>
+        </section>
+        <section class="hotels">
+            <div class="container">
+                <h5 class="section-head">
+                    <span class="heading">Explore</span>
+                    <span class="sub-heading">Our beatiful hotels</span>
+                </h5>
+                <div class="grid">
+                    <div class="grid-item featured-hotels">
+                        <img src="https://imagenes.weekendcolombia.co/73461cdfefd5c25e82d364c0d84-La%20Terraza%20Hotel%20Chicamocha%20(2).jpeg" alt=""class="hotel-image"> 
+                    
+                    <h5 class="hotel-name">Hotel chicamocha</h5>
+                    <span class="hotel-price">Desde 199000 por noche</span>
+                    <div class="hotel-rating">
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                    </div>
+                    <a href="#" class="boton_1">Reserva ahora
+                       </i></span>
+                    </a>
+                    </div>
+
+                    <div class="grid-item featured-hotels">
+                        <img src="https://images.e-tsw.com/_lib/vimages/Bucaramanga/Hotels/Hotel-Ciudad-Bonita/Gallery/Bucaramanga-Ciudad-Bon-Piscina-2.jpg" alt=""class="hotel-image"> 
+                    
+                    <h5 class="hotel-name">Hotel Ciudad Bonita</h5>
+                    <span class="hotel-price">Desde 180000 por noche</span>
+                    <div class="hotel-rating">
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star-half rating"></i>
+                    </div>
+                    <a href="#" class="boton_1">Reserva ahora
+                       </i></span>
+                    </a>
+                    </div>
+
+                    <div class="grid-item featured-hotels">
+                        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/125332548.jpg?k=9cedc271f0fe68f9f4a4a3944e345eecacac776233623dc3727cd19e32f2b0af&o=&hp=1" alt=""class="hotel-image"> 
+                    
+                    <h5 class="hotel-name">Hotel Dann Cartlon</h5>
+                    <span class="hotel-price">Desde 320000 por noche</span>
+                    <div class="hotel-rating">
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                    </div>
+                    <a href="#" class="boton_1">Reserva ahora
+                       </i></span>
+                    </a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="container">
+                <h5 class="section-head">
+                    <span class="heading">Contact</span>
+                    <span class="sub-heading">Get in touch with us</span>
+                </h5>
+                <div class="contact-content">
+                    <div class="traveler-wrap">
+                        <img src="https://media.istockphoto.com/photos/side-portrait-of-man-walking-with-mobile-phone-and-suitcase-picture-id1034837400?b=1&k=20&m=1034837400&s=170667a&w=0&h=WvOc4gdVaJYuDUB6g5wyLWIrTJ_wR_SBRExBSuV3rYY=" alt="">
+
+                    </div>
+<form action =""class="form contact-form">
+<div class="input-group-wrap">
+    <div class="input-group">
+        <input type="text" class="input" placeholder="Name" required>
+        <span class="bar"></span>
+    </div>
+    <div class="input-group">
+        <input type="text" class="input" placeholder="E-mail" required>
+        <span class="bar"></span>
+    </div>
+    <div class="input-group">
+        <input type="text" class="input" placeholder="Subject" required>
+        <span class="bar"></span>
+    </div>
+</div>
+
+
+
+
+</form>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   		integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   		crossorigin=""></script>   		
+	
+	<script src="mapa.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
