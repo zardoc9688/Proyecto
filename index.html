@@ -1,3 +1,4 @@
+
 <!doctype html>
 
 <html lang="en">
@@ -10,13 +11,10 @@
    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <title>Sitios Turisticos de Colombia</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-          integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-          crossorigin=""/>		
-   <link rel="stylesheet" type="text/css" href="mapa.css"/>	
-
-  
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>		
+<link rel="stylesheet" type="text/css" href="mapa.css"/>
 </head>
 
 <body>
@@ -47,6 +45,7 @@
 
     </ul>
 </nav>
+
 </div>
 
     </header>
@@ -164,6 +163,65 @@
             </div>
             </div>
         </section>
+        <section class="rooms">
+            <div class ="container">
+                <h5 class="section-head">
+                    <span class="heading">Luxurious</span>
+<span class="sub-heading">Affordable rooms</span>
+                </h5>
+                <div class="grid rooms-grid">
+                    <div class="grid-item featured-rooms">
+                        <div class="image-wrap">
+                            <img clas="room-image"src="https://www.ahstatic.com/photos/1871_roskb_00_p_1024x768.jpg" alt="">
+                            <h5 class="room-name">Sofitel Legend Santa Clara</h5>
+                        </div>
+                        <div class="room-info-wrap"> 
+                            <span class="room-price">4595513<span class="per-nigth"> Por noche</span></span>
+                        <p class="paragraph">Viva rodeado de lujo en su Suite y disfrute del art-de-vivre. Viaje con estilo con su propio chófer. Relájese, disfrute de una botella de champán, desayune en la cama… Sueñe todo el día con la ampliación de la hora de salida.</p>
+                        <a href="#" class="rooms-btn">Reserva ahora &rarr;</a>
+                        </div>
+                       
+                    </div>
+                    <div class="grid-item featured-rooms">
+                        <div class="image-wrap">
+                            <img clas="room-image"src="https://www.ahstatic.com/photos/1871_roskb_00_p_1024x768.jpg" alt="">
+                            <h5 class="room-name">Grand Hyatt</h5>
+                        </div>
+                        <div class="room-info-wrap"> 
+                            <span class="room-price">963554<span class="per-nigth"> Por noche</span></span>
+                        <p class="paragraph">Relájese en este espacio de 41 metros cuadrados completo con dos camas dobles, un escritorio, dos lavamanos en el baño, así como una vista al jardín.</p>
+                        <a href="#" class="rooms-btn">Reserva ahora &rarr;</a>
+                        </div>
+                       
+                    </div>
+                    <div class="grid-item featured-rooms">
+                        <div class="image-wrap">
+                            <img clas="room-image"src="https://www.fourseasons.com/alt/img-opt/~80.690/publish/content/dam/fourseasons/images/web/BIH/BIH_069_aspect16x9.jpg" alt="">
+                            <h5 class="room-name">Four Seasons</h5>
+                        </div>
+                        <div class="room-info-wrap"> 
+                            <span class="room-price">2128506<span class="per-nigth"> Por noche</span></span>
+                        <p class="paragraph">Nuestro icónico edificio de 1946, diseñado por el artista-arquitecto colombiano Santiago Medina Mejía, cuenta con algunas de las habitaciones más elegantes de la ciudad, techos con vigas, mobiliario de madera tallada a mano y acogedoras chimeneas. Además, no hay dos habitaciones que sean iguales. A pocos pasos del bullicioso distrito financiero y del paraíso gourmet de la Zona G, Casa Medina es un refugio urbano para viajeros con buen gusto.</p>
+                        <a href="#" class="rooms-btn">Reserva ahora &rarr;</a>
+                        </div>
+                       
+                    </div>
+                    <div class="grid-item featured-rooms">
+                        <div class="image-wrap">
+                            <img clas="room-image"src="https://www.ahstatic.com/photos/1871_roskb_00_p_1024x768.jpg" alt="">
+                            <h5 class="room-name">JW Marriott Hotel</h5>
+                        </div>
+                        <div class="room-info-wrap"> 
+                            <span class="room-price">1733726<span class="per-nigth"> Por noche</span></span>
+                        <p class="paragraph">Sumérjase en el área culturalmente rica que rodea al Bogota Marriott Hotel. Ubicado cerca del aeropuerto, en la avenida 26 en el barrio El Salitre y algunos de los destinos más atractivos de la ciudad de Bogotá, como el centro comercial Gran Estación, el Parque Metropolitano Simón Bolívar y la Embajada de los Estados Unidos en Bogotá. Después de un día ajetreado, encuentre refugio en nuestras exclusivas habitaciones en Bogotá y estancias prolongadas ...</p>
+                        <a href="#" class="rooms-btn">Reserva ahora &rarr;</a>
+                        </div>
+                       
+    
+                </div>
+            </div>
+            
+        </section>
         <section class="contact">
             <div class="container">
                 <h5 class="section-head">
@@ -189,7 +247,11 @@
         <input type="text" class="input" placeholder="Subject" required>
         <span class="bar"></span>
     </div>
-</div>
+    <div class="input-group">
+        <textarea  class="input" cols="30" rows="8" placeholder="E-mail" required>
+        <span class="bar"></span>
+    </div>
+<button type="sumbit" class="boton_1">Enviar mensaje</button>
 
 
 
@@ -200,11 +262,31 @@
             </div>
         </section>
     </main>
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-   		integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-   		crossorigin=""></script>   		
-	
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+<div class="social-media-wrap">
+<h4 class="footer-heading">Follow us</h4>
+<div class="social-media">
+    <a href="" class="sm-link"><i class="fab fa-twitter"></i></a>
+    <a href="" class="sm-link"><i class="fab fa-facebook-square"></i></a>
+    <a href="" class="sm-link"><i class="fab fa-instagram"></i></a>
+    <a href="" class="sm-link"><i class="fab fa-pinterest"></i></a>
+    <a href="" class="sm-link"><i class="fab fa-trapadvisor"></i></a>
+</div>
+</div>
+            </div>
+        </div>
+    </footer>
+   
+    
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>   		
+
 	<script src="mapa.js"></script>
+	
     <script src="main.js"></script>
 </body>
 </html>
