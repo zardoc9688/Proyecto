@@ -356,12 +356,38 @@ margin-bottom: 1rem;
 .contact-form .input:focus + .bar::after{
     transform: scaleX(1);
 }
+
+
 .footer{
     padding: 5rem 0;
     background-color: var(--purple-solid);
     color: #fff;
 
 }
+
+.social-media{
+    display:flex;
+}
+.sm-link{
+    width: 4rem;
+    height: 4rem;
+    border: 2px solid var(--yellow-solid);
+    border-radius: 50%;
+    display: flex;
+    margin-right: 1rem;
+    transition: backgrount-color .5s;
+}
+.sm-link:hover{
+
+background-color: var(--yellow-solid);
+color: var(--dark-color);
+
+
+}
+.sm-link i{
+    margin: auto;
+}
+
 
 
 
@@ -377,7 +403,7 @@ margin-bottom: 1rem;
         
     }
     .contact-content{
-
+      justify-content: space-between;
     }
     .traveler-wrap{
         display: block;
@@ -390,4 +416,57 @@ margin-bottom: 1rem;
         flex: 0 0 50%;
         align-self: flex-start;
     }
+    .input-group-wrap{
+        display: flex;
+    }
+    .input-group-wrap .input-group{
+        width: 50%;
+        margin-right: 2rem;
+    }
+    .input-group-wrap .input-group:last-child{
+       
+        margin-right: 0;
+    }
 }
+
+    @media screen and(min-width:1000px){
+    section:not(.booking){
+        padding: 10rem 0;
+    }
+
+
+.hamburger-menu{
+    display: auto;
+}
+
+.nav-list{
+    position: initial;
+    width: initial;
+    height: initial;
+    background-color: transparent;
+    flex-direction: row;
+    justify-content: initial;
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+.nav-item:not(:last-child){
+    margin-right: 3rem;
+    margin-bottom: 0;
+}
+
+.nav-link{
+    font-size: 1.3rem;
+    font-weight: normal;
+    transition: color .5s;
+}
+nav-link:hover{
+    color: var(--yellow-solid);
+}
+.book-form{
+    display: flex;
+    
+}
+    }
+    
+
