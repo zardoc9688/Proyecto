@@ -254,6 +254,10 @@ margin-bottom: 1rem;
 }.rating{
     color:var(--Black);
 }
+
+
+
+
 .rooms{
     background-color: #f2f6f9;
 }
@@ -348,7 +352,12 @@ background-color: var(--yellow-solid) ;
 .contact-form .input:focus + .bar::after{
     transform: scaleX(1);
 }
+.footer{
+    padding: 5rem 0;
+    background-color: var(--purple-solid);
+    color: #fff;
 
+}
 
 
 
