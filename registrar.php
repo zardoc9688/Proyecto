@@ -1,5 +1,4 @@
 <?php 
-
 include("con_db.php");
 
 if (isset($_POST['register'])) {
@@ -10,7 +9,7 @@ if (isset($_POST['register'])) {
 	    $email = trim($_POST['email']);
 		$elpepe = trim($_POST['elpepe']);
 	    $etesech = trim($_POST['etesech']);
-	    $consulta = "INSERT INTO datos(nombre, email, elpepe, etesech) VALUES ('$name','$email','$elpepe','$etesech')";
+	    $consulta = "INSERT INTO `datos`(`id`, `name`, `email`, `elpepe`, `etesech`) VALUES ('id','$name','$email','$elpepe','$etesech')";
 	    $resultado = mysqli_query($conex,$consulta);
 	    if ($resultado) {
 	    	?> 

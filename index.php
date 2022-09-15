@@ -244,12 +244,12 @@
                         </div> 
                         <input type="submit" name="register">
                         </form>
-            
+                
             </div>
    </div>
    <?php 
     include("registrar.php");
-    ?>    
+    ?>   
  </section>
 </main>
 
