@@ -10,7 +10,7 @@ $(document).ready(function () {
         $('.pop-up-wrap').removeClass('show');
     });
 
-    $(".btn-abrir").click(showPopup);
+
 
     setTimeout(showPopup, 10000);
 

@@ -1,9 +1,10 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <link rel="stylesheet" href="About.css">
+    <title>Contact</title>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
@@ -36,25 +37,63 @@
         </nav>
     </div>
 </header>  
-<div class="about-section">
-    <div class="inner-container">
-        <h1>Sobre nosotros</h1>
-        <p class="text">
-           
-            Fundada en 2022 por dos amigos de la universidad industrial de santander, itervelox se ha convertido desde entonces en un sitio web de búsqueda de alojamiento líder a nivel nacional. Estamos enfocados en remodelar la forma en la que los colombianos buscan y comparan hoteles y otros alojamientos. La misión de itervelox es convertirse en su herramienta predilecta para buscar su comunidad en sus aventuras por colombia
-        </p>
-        <div class="skills"
-            <span>Att:Equipo central de itervelox</span>
-            
-        </div>
-    </div>
-</div>
-<div>   	
+    
+
+
+
+
+
+
+
+
 </head>
 <body>
 
-   
+                    <section class="contact">
+                    <div class="container">
+                    <h5 class="section-head">
+                            <span class="heading">Contactenos</span>
+                                <span class="sub-heading">ponte en contacto con nosotros</span>
+                                    </h5>
+                                    <div class="contact-content">
+                                        <div class="traveler-wrap">
+                                            <img src="https://www.timhotels.in/images/sliders/revolution_slider/slider1/slide4/guy.png" alt="">
+                    
+                                        </div>
+                    <form method="post" class="form contact-form">
+                        <h1>------------------</h1>
+                        <div class="input-group"> 
+                            <input type="text" name="name" placeholder="Nombre completo" required>
+                            <span class="bar"></span>
+                        </div>
+                        <div class="input-group"> 
+                            <input type="email" name="email" placeholder="Email" required>
+                            <span class="bar"></span>
+                        </div> 
+                        <div class="input-group"> 
+                            <input type="text" name="elpepe" placeholder="Subject" required>
+                            <span class="bar"></span>
+                        </div> 
+                        <div class="input-group"> 
+                            <textarea  type="text" name="etesech" cols="30" rows="8" placeholder="Texto" required></textarea>                            
+                            <span class="bar"></span>
+                        </div> 
+                        <input type="submit" name="register">
+                        </form>
+            
+            </div>
+   </div>
+   <?php 
+    include("registrar.php");
+    ?>    
+ </section>
 
+</form>
+
+            </div>
+        </div>
+    </section>
+</body>
 <footer class="footer">
     <div class="container">
         <div class="footer-content">
@@ -70,11 +109,6 @@
 </div>
         </div>
     </div>
-</div>
 </footer>
-
-
-    
-</body> <script src="main.js"></script>
-
+<script src="main.js"></script>
 </html>
